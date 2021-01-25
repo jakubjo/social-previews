@@ -1,0 +1,41 @@
+{
+  "name": "jakubjo/social-previews",
+  "description": "Generate social preview images with ease.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jakub Jozefke",
+      "email": "jakub@jakub.io"
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "ext-gd": "*",
+    "illuminate/contracts": "^8.0",
+    "illuminate/http": "^8.0",
+    "illuminate/routing": "^8.0",
+    "illuminate/support": "^8.0",
+    "imagine/imagine": "^1.0"
+  },
+  "autoload": {
+    "files": [
+      "src/helpers.php"
+    ],
+    "psr-4": {
+      "SocialPreviews\\": "src/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "laravel": {
+      "providers": [
+        "SocialPreviews\\SocialPreviewsServiceProvider"
+      ]
+    }
+  }
+}
